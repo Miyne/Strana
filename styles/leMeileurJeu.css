@@ -33,7 +33,7 @@ body{
     background-color: #696969;
 	line-height: 1.6;
     font-family: Verdana, Geneva, sans-serif;
-    color: #E8DBB1;
+    color: #ffffff;
 }
 ol, ul{
 	list-style: none;
@@ -70,6 +70,8 @@ header > a{
 }
 header > p{
 	font-size: 30px;
+	font-size: 35px;
+	font-weight: bold;	
 	text-align: center;
 }
 
