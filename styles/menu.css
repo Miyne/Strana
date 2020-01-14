@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body{
     font-size: 16px;
-    background-color: #20190F;
+    background-color: #696969;
 	line-height: 1.6;
     font-family: Verdana, Geneva, sans-serif;
     color: #E8DBB1;
@@ -59,7 +59,6 @@ The following part has been added by myself
  *##########################################*/
 
 .flex-container{
-	margin: 15px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -73,7 +72,8 @@ The following part has been added by myself
 
 .flex-container a{
 	margin-top: 15px;
-	border: 2px solid orange;
+	background-color: #2F4F4F;
+	border: 2px solid #2F4F4F;
 	font-weight: bold;
     display: block;
     text-align: center;
