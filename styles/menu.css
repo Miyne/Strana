@@ -33,7 +33,7 @@ body{
     background-color: #696969;
 	line-height: 1.6;
     font-family: Verdana, Geneva, sans-serif;
-    color: #E8DBB1;
+    color: #ffffff;
 }
 ol, ul{
 	list-style: none;
@@ -57,6 +57,24 @@ The following part has been added by myself
 /*##########################################*
  *					MENU					*
  *##########################################*/
+
+header{
+	background-color: #2F4F4F;
+	height: 50px;
+}
+/*header > a{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url(../images/home.png) no-repeat;
+	background-size: 50px;
+}*/
+header > p{
+	height: 50px;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
 
 .flex-container{
 	display: flex;
