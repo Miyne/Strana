@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <link href="../styles/leMeileurJeu.css" rel="stylesheet">
+		<link href="../styles/map.css" rel="stylesheet">
+		<script src="../script/map.js"></script>
         <meta charset="utf-8">
-        <title>Overpass | StratWiki</title>
-		<script type="text/javascript">
-      		function onButtonClick(choice) {
-        		console.log("You just clicked: " + choice);
-        		document.getElementById("ct").style = "display: none";
-        		document.getElementById("t").style = "display: none";
-      		}
-    	</script>	    
+        <title>Overpass | StratWiki</title>    
     </head>
 
     <body class="map_overpass">
@@ -18,15 +12,6 @@
     		<a href="menu.html"></a>
     		<p>OVERPASS</p>
     	</header>
-    	<main>
-      		<div class="tab">
-        		<button id="ct" class="ct_side" onclick='onButtonClick("ct")'>
-          			<p>CT side</p>
-        		</button>
-        		<button id="t" class="t_side" onclick='onButtonClick("t")'>
-          			<p>T side</p>
-        		</button>
-		</div>
-    	</main>   	
+		<main id="root"></main>  	
     </body>
 </html>

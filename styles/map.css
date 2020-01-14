@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+    font-size: 16px;
+    background-color: #696969;
+	line-height: 1.6;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #ffffff;
+}
+ol, ul{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+The following part has been added by myself 
+*/
+
+/*########################################*
+ *					MAPS				  *
+ *########################################*/
+header{
+	background-color: #2F4F4F;
+	height: 50px;
+}
+header > a{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url(../images/home.png) no-repeat;
+	background-size: 50px;
+}
+header > p{
+	font-size: 30px;
+	font-size: 35px;
+	font-weight: bold;	
+	text-align: center;
+}
+
+
+body[class^="map_"] main{
+	position: relative;
+  	width: 93vh;
+    margin: 0 auto;
+    max-width: 99vw;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: contain;
+}
+
+body[class^="map_"] main:after{
+	content: "";
+  	display: block;
+  	padding-bottom: 100%;
+}
+
+/*########################################*
+ *					NUKE				  *
+ *########################################*/
+body.map_nuke main{
+ 	background-image: url("../images/de_nuke_radar.png");
+}
+
+/*########################################*
+ *					MIRAGE				  *
+ *########################################*/
+body.map_mirage main{
+ 	background-image: url("../images/de_mirage_radar.png");
+}
+
+/*########################################*
+ *					INFERNO				  *
+ *########################################*/
+body.map_inferno main{
+	background-image: url("../images/de_inferno_radar.png");
+}
+
+/*########################################*
+ *					DUST2				  *
+ *########################################*/
+body.map_dust2 main{
+	background-image: url("../images/de_dust2_radar.png");
+}
+
+/*########################################*
+ *					CACHE				  *
+ *########################################*/
+body.map_cache main{
+	background-image: url("../images/de_cache_radar.png");
+}
+
+/*########################################*
+ *					OVERPASS			  *
+ *########################################*/
+body.map_overpass main{
+	background-image: url("../images/de_overpass_radar.png");
+}
+
+/*########################################*
+ *					TRAIN    			  *
+ *########################################*/
+body.map_train main{
+	background-image: url("../images/de_train_radar.jpg");
+}
+
+/*########################################*
+ *					VERTIGO    			  *
+ *########################################*/
+body.map_vertigo main{
+	background-image: url("../images/de_vertigo_radar.png");
+}
+
+/* Style the buttons that are used to open the tab content */
+main button{
+	outline: none;
+	transition: 0.3s;
+}
+
+main button[class="ct_side"]{
+	position: absolute;
+	right: 0px;
+	width: 50%;
+	height: 100%;
+	background: url(../images/m4_recall.gif) no-repeat;
+    background-size: cover;
+	opacity: 0.4;
+}
+main button[class="ct_side"]:hover{
+	opacity: 1;
+}	
+
+main button[class="t_side"]{
+	position: absolute;
+    left: 0px;
+    width: 50%;
+	height: 100%;    
+    background: url(../images/ak_recall.gif) no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+main button[class="t_side"]:hover{
+	opacity: 1;
+}
+
+main button p {
+	color: #fff;
+}
