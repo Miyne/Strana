@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body{
     font-size: 16px;
-    background-color: #20190F;
+    background-color: #696969;
 	line-height: 1.6;
     font-family: Verdana, Geneva, sans-serif;
     color: #E8DBB1;
@@ -58,7 +58,7 @@ The following part has been added by myself
  *					MAPS				  *
  *########################################*/
 header{
-	background-color: ##696969;
+	background-color: #2F4F4F;
 	height: 50px;
 }
 header > a{
