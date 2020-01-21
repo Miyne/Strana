@@ -76,7 +76,7 @@ header > p{
 }
 
 
-body[class^="map_"] main{
+body[id^="map_"] main{
 	position: relative;
   	width: 94.7vh;
     margin: 0 auto;
@@ -86,65 +86,75 @@ body[class^="map_"] main{
   	background-size: contain;
 }
 
-body[class^="map_"] main:after{
+body[id^="map_"] main:after{
 	content: "";
   	display: block;
   	padding-bottom: 100%;
 }
 
+aside[id="left"]{
+	float: left;
+	background-color: purple;
+}
+
+aside[id="right"]{
+	float: right;	
+	background-color: orange;
+}
+
 /*########################################*
  *					NUKE				  *
  *########################################*/
-body.map_nuke main{
+#map_nuke main{
  	background-image: url("../images/de_nuke_radar.png");
 }
 
 /*########################################*
  *					MIRAGE				  *
  *########################################*/
-body.map_mirage main{
+#map_mirage main{
  	background-image: url("../images/de_mirage_radar.png");
 }
 
 /*########################################*
  *					INFERNO				  *
  *########################################*/
-body.map_inferno main{
+#map_inferno main{
 	background-image: url("../images/de_inferno_radar.png");
 }
 
 /*########################################*
  *					DUST2				  *
  *########################################*/
-body.map_dust2 main{
+#map_dust2 main{
 	background-image: url("../images/de_dust2_radar.png");
 }
 
 /*########################################*
  *					CACHE				  *
  *########################################*/
-body.map_cache main{
+#map_cache main{
 	background-image: url("../images/de_cache_radar.png");
 }
 
 /*########################################*
  *					OVERPASS			  *
  *########################################*/
-body.map_overpass main{
+#map_overpass main{
 	background-image: url("../images/de_overpass_radar.png");
 }
 
 /*########################################*
  *					TRAIN    			  *
  *########################################*/
-body.map_train main{
+#map_train main{
 	background-image: url("../images/de_train_radar.jpg");
 }
 
 /*########################################*
  *					VERTIGO    			  *
  *########################################*/
-body.map_vertigo main{
+#map_vertigo main{
 	background-image: url("../images/de_vertigo_radar.png");
 }
 
