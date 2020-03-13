@@ -48,7 +48,7 @@ function createPage(){
     </button>`
 }
 
-function displayStrana(){
+function displayStrana(){ //test
     document.getElementByID("root").innerHTML=`
     <aside id="left">
         <select name="strat">
