@@ -76,7 +76,7 @@ header > p{
 }
 
 
-body[id^="map_"] main{
+body.map main{
 	position: relative;
   	width: 94.7vh;
     margin: 0 auto;
@@ -86,7 +86,7 @@ body[id^="map_"] main{
   	background-size: contain;
 }
 
-body[id^="map_"] main:after{
+body.map main:after{
 	content: "";
   	display: block;
   	padding-bottom: 100%;
@@ -105,56 +105,56 @@ aside[id="right"]{
 /*########################################*
  *					NUKE				  *
  *########################################*/
-#map_nuke main{
+#nuke main{
  	background-image: url("../images/de_nuke_radar.png");
 }
 
 /*########################################*
  *					MIRAGE				  *
  *########################################*/
-#map_mirage main{
+#mirage main{
  	background-image: url("../images/de_mirage_radar.png");
 }
 
 /*########################################*
  *					INFERNO				  *
  *########################################*/
-#map_inferno main{
+#inferno main{
 	background-image: url("../images/de_inferno_radar.png");
 }
 
 /*########################################*
  *					DUST2				  *
  *########################################*/
-#map_dust2 main{
+#dust2 main{
 	background-image: url("../images/de_dust2_radar.png");
 }
 
 /*########################################*
  *					CACHE				  *
  *########################################*/
-#map_cache main{
+#cache main{
 	background-image: url("../images/de_cache_radar.png");
 }
 
 /*########################################*
  *					OVERPASS			  *
  *########################################*/
-#map_overpass main{
+#overpass main{
 	background-image: url("../images/de_overpass_radar.png");
 }
 
 /*########################################*
  *					TRAIN    			  *
  *########################################*/
-#map_train main{
+#train main{
 	background-image: url("../images/de_train_radar.jpg");
 }
 
 /*########################################*
  *					VERTIGO    			  *
  *########################################*/
-#map_vertigo main{
+#vertigo main{
 	background-image: url("../images/de_vertigo_radar.png");
 }
 
@@ -164,32 +164,38 @@ main button{
 	transition: 0.3s;
 }
 
-main button[class="ct_side"]{
+main button[class$="side"]{
 	position: absolute;
-	right: 0px;
 	width: 50%;
 	height: 100%;
-	background: url(../images/m4_recall.gif) no-repeat;
-    background-size: cover;
 	opacity: 0.4;
 }
+main button[class="ct_side"]{
+	background: url(../images/m4_recall.gif) no-repeat;
+	background-size: cover;
+	right: 0px;
+}
+main button[class="t_side"]{
+	background: url(../images/ak_recall.gif) no-repeat;
+	background-size: cover;
+	left: 0px;
+}
+
+main button[class$="side"]:hover{
+	opacity: 1;
+}	
 main button[class="ct_side"]:hover{
 	opacity: 1;
 }	
-
-main button[class="t_side"]{
-	position: absolute;
-    left: 0px;
-    width: 50%;
-	height: 100%;    
-    background: url(../images/ak_recall.gif) no-repeat;
-    background-size: cover;
-    opacity: 0.4;
-}
 main button[class="t_side"]:hover{
 	opacity: 1;
 }
 
 main button p {
 	color: #fff;
+}
+
+aside#left{
+	position: absolute;
+	left: 0px;
 }

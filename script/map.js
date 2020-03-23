@@ -49,7 +49,7 @@ function createPage(){
 }
 
 function displayStrana(){ //test
-    document.getElementByID("root").innerHTML=`
+    document.getElementsByClassName("map").innerHTML=`
     <aside id="left">
         <select name="strat">
             <option value="test1">TEST strat1</option>
