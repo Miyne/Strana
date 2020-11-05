@@ -1,1 +1,1 @@
-miyne.github.io/strana
+web site for any stuff in CS
