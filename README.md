@@ -1,0 +1,1 @@
+miyne.github.io/strana
