@@ -64,7 +64,7 @@ header{
 	height: 50px;
 }
 
-header > p{
+header > h1{
 	height: 50px;
 	font-size: 35px;
 	font-weight: bold;
@@ -86,8 +86,8 @@ header > p{
 
 .flex-container a{
 	margin-top: 15px;
-	background-color: #2F4F4F;
-	border: 2px solid #2F4F4F;
+	background-color: #294646;
+	border: 2px solid #294646;
 	font-weight: bold;
     display: block;
     text-align: center;

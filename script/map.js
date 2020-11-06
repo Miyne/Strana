@@ -1,81 +1,59 @@
 //confondre menu.html et  map.html
 
-document.addEventListener("DOMContentLoaded", function(e) {
-
-    // recuperer param dans URL
-    switch (window.location.href.substr(window.location.href.indexOf('?'))) {
-        case 'nuke':
-                //
-                break;
-        case 'overpass':
-                //
-                break;
-        case 'dust2':
-                //
-                break;
-        case 'mirage':
-                //
-                break;
-        case 'inferno':
-                //
-                break;
-        case 'vertigo':
-                //
-                break;
-        case 'cache':
-                //
-                break;
-        case 'train':
-                //
-                break;
-        default:
-                //Error
-    }
-
-    // récupère l'element main
-
-    // rempli le main avec le contenu que tu veux
-
-})
-
-function createPage(){
+document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("root").innerHTML=`
-    <button id="ct" class="ct_side" onclick='onButtonClick("ct")'>
+    <button id="ct">
         <p>CT Side</p>
     </button>
-    <button id="t" class="t_side" onclick='onButtonClick("t")'>
+    <button id="t">
         <p>T Side</p>
     </button>`
-}
+    
+    let ct=document.getElementById("ct");
+    ct.addEventListener("click", function(){
+        onButtonClick("ct");
+    });
 
-function displayStrana(){ //test
-    document.getElementsByClassName("map").innerHTML=`
-    <aside id="left">
-        <select name="strat">
-            <option value="test1">TEST strat1</option>
-            <option value="test2">TEST strat2</option>
-            <option value="test3">TEST strat3</option>
-            <option value="test4">TEST strat4</option>
-            <option value="test5">TEST strat5</option>
-        </select>
-    </aside>
+    let t=document.getElementById("t");
+    t.addEventListener("click", function(){
+        onButtonClick("t");
+    });
 
-    <aside id="right">
-        <select name="stuff">
-            <option value="test1">TEST stuff1</option>
-            <option value="test2">TEST stuff2</option>
-            <option value="test3">TEST stuff3</option>
-            <option value="test4">TEST stuff4</option>
-            <option value="test5">TEST stuff5</option>
-        </select>
-    </aside>`
-}
+    function onButtonClick(choice) {
+        console.log("clique sur: "+choice);
+        document.getElementById("ct").style = "display: none";
+        document.getElementById("t").style = "display: none";
+        displayStrana(choice);
+    }
 
-function onButtonClick(choice) {
-    console.log("You just clicked: " + choice);
-    document.getElementById("ct").style = "display: none";
-    document.getElementById("t").style = "display: none";
-    displayStrana();
-}
+    function displayStrana(choice){
+        let left=document.getElementById("left");
+        left.className=choice;
+        left.innerHTML+=`
+        <h2>Stratégies</h2>
+        <p>strat1 TEST</p>
+        <p>strat2 TEST</p>
+        <p>strat3 TEST</p>
+        <p>strat4 TEST</p>
+        <p>strat5 TEST</p>
+        `
+        left.addEventListener("mouseover", function(e){
+            //if(e.target==)
+        });        
+        left.addEventListener("click", function(e){
+            //if(e.target==)
+        });
 
-document.addEventListener('DOMContentLoaded', function() {createPage();}, false);
+        let right=document.getElementById("right")
+        right.innerHTML+=`
+        <h2>Stuff</h2>
+        <p>stuff1 TEST</p>
+        <p>stuff2 TEST</p>
+        <p>stuff3 TEST</p>
+        <p>stuff4 TEST</p>
+        <p>stuff5 TEST</p>`
+
+
+    }
+});
+
