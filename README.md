@@ -1,1 +1,1 @@
-web site for any stuff in CS
+web site for any strats and nades in CS
