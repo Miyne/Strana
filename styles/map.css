@@ -213,3 +213,8 @@ main button p {
 	color: #fff;
 	font-size: 20px;
 }
+
+aside#left{
+	position: absolute;
+	left: 0px;
+}
