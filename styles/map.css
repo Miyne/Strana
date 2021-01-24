@@ -200,6 +200,13 @@ main button[id="ct"]{
 main button[id="ct"]:hover{
 	opacity: 1;
 }
+main button[id="ct"] > p{
+	visibility:hidden;
+}
+main button[id="ct"]:hover > p{
+	visibility: visible;
+}
+
 main button[id="t"]{
     left: 0px;  
     background: url(../images/ak_recall.gif) no-repeat;
@@ -208,10 +215,16 @@ main button[id="t"]{
 main button[id="t"]:hover{
 	opacity: 1;
 }
+main button[id="t"] > p{
+	visibility: hidden;
+}
+main button[id="t"]:hover > p{
+	visibility: visible;
+}
 
 main button p {
 	color: #fff;
-	font-size: 20px;
+	font-size: 40px;
 }
 
 aside#left{
