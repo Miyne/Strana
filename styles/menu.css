@@ -31,10 +31,10 @@ footer, header, hgroup, menu, nav, section {
 body{
 	min-height: 100vh;
     font-size: 16px;
-    background-color: #696969;
+    background-color: rgb(105, 105, 105);
 	line-height: 1.6;
     font-family: Verdana, Geneva, sans-serif;
-    color: #ffffff;
+    color: white;
 }
 ol, ul{
 	list-style: none;
@@ -60,7 +60,7 @@ The following part has been added by myself
  *##########################################*/
 
 header{
-	background-color: #2F4F4F;
+	background-color: rgb(47, 79, 79);
 	height: 50px;
 }
 
@@ -86,13 +86,13 @@ header > h1{
 
 .flex-container a{
 	margin-top: 15px;
-	background-color: #294646;
-	border: 2px solid #294646;
+	background-color: rgb(41, 70, 70);
+	border: 2px solid rgb(41, 70, 70);
 	font-weight: bold;
     display: block;
     text-align: center;
 	text-decoration: none;
-	color: #ffffff;
+	color: white;
 }
 
 .flex-container img{
