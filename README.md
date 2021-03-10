@@ -1,6 +1,6 @@
 ***STILL IN DEVELOPMENT***
 
-web site for any strats and nades in CounterStrike Global Offensive
+website for any strats and nades in the game CounterStrike Global Offensive
 
 live version: https://miyne.github.io/Strana/
 
