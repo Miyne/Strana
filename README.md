@@ -10,4 +10,4 @@ live version: https://miyne.github.io/strana/
 - [ ] adding breakpoints for mobile users
 
 *making a personnal data website:*<br>
-- [ ] adding a store data method
+- [ ] adding a local store data method using the FileReader API
