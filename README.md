@@ -2,7 +2,7 @@
 
 web site for any strats and nades in CounterStrike Global Offensive
 
-live version: https://miyne.github.io/strana/
+live version: https://miyne.github.io/Strana/
 
 **TODO:**<br>
 *making the website recursive:*<br>
