@@ -74,9 +74,31 @@ header > h1{
 	font-weight: bold;	
 	text-align: center;
 }
+header > input{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+	opacity: 0;
+}
+header > input:hover{
+	cursor: pointer;
+}
+header > div.overlap-upload{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	z-index: 0;
+	background: url(../images/add-file.png) no-repeat;
+	background-size: 50px;
+}
 
 
-body[id="map"] main{
+body#map main{
 	position: relative;
   	width: 94.7vh;
     margin: 0 auto;
@@ -85,18 +107,20 @@ body[id="map"] main{
   	background-repeat: no-repeat;
   	background-size: contain;
 }
-body[id="map"] main:after{
+body#map main:after{
 	content: "";
   	display: block;
   	padding-bottom: 100%;
 }
 
 
-aside[id="left"]{
-	position: relative;
-	width: 25vh;
+aside{
+	position: absolute;
+	width: calc((100% - 94.7vh)/2);
+	top: 50px;
+}
+aside#left{
 	float: left;
-	
 }
 aside#left.ct{
 	background-color: rgb(9, 24, 138);
@@ -104,20 +128,47 @@ aside#left.ct{
 aside#left.t{
 	background-color: rgb(128, 0, 43);
 }
-aside[id="right"]{
-	position: relative;
-	width: 25vh;
-	float: right;	
-	background-color: grey;
+aside#right{
+	float: right;
+	right: 0px;
+}
+
+@media only screen and (max-width: 1450px){
+	aside{
+		position: relative;
+		width: calc(94.7vh/2);
+		max-width:calc(100%/2);
+		top: 0px;
+		opacity: 0.4;
+	}
+	aside#left{
+		float: left;
+		left: calc((100% - 94.7vh)/2);
+	}
+	aside#right{
+		float: right;
+		right: calc((100% - 94.7vh)/2);
+		background-color: grey;
+	}
+}
+
+@media only screen and (max-width: 938px){
+	aside#left{
+		left:0;
+	}
+	aside#right{
+		right:0;
+	}
 }
 
 aside>h2{
 	text-align: center;
-	font-size: 25px;
+	font-size: 35px;
 	border-bottom: solid 3px black;
 }
 aside>p{
-	height: 30px;
+	height: 35px;
+	font-size: 20px;
 	text-align: center;
 	border-bottom: solid 1px black;
 }
@@ -184,6 +235,7 @@ aside>p:hover{
 }
 
 /* Style the buttons that are used to open the tab content */
+
 main button{
 	position: absolute;	
 	width: 50%;
@@ -192,42 +244,37 @@ main button{
 	transition: 0.3s;
     opacity: 0.4;	
 }
-main button[id="ct"]{
+main button#ct{
 	right: 0px;
 	background: url(../images/m4_recall.gif) no-repeat;
     background-size: cover;
 }
-main button[id="ct"]:hover{
+main button#ct:hover{
 	opacity: 1;
 }
-main button[id="ct"] > p{
+main button#ct > p{
 	visibility:hidden;
 }
-main button[id="ct"]:hover > p{
+main button#ct:hover > p{
 	visibility: visible;
 }
 
-main button[id="t"]{
+main button#t{
     left: 0px;  
     background: url(../images/ak_recall.gif) no-repeat;
     background-size: cover;
 }
-main button[id="t"]:hover{
+main button#t:hover{
 	opacity: 1;
 }
-main button[id="t"] > p{
+main button#t > p{
 	visibility: hidden;
 }
-main button[id="t"]:hover > p{
+main button#t:hover > p{
 	visibility: visible;
 }
 
 main button p {
 	color: white;
 	font-size: 40px;
-}
-
-aside#left{
-	position: absolute;
-	left: 0px;
 }
