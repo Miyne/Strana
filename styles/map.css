@@ -123,10 +123,10 @@ aside#left{
 	float: left;
 }
 aside#left.ct{
-	background-color: rgb(9, 24, 138);
+	background-color: rgb(32, 42, 68);
 }
 aside#left.t{
-	background-color: rgb(128, 0, 43);
+	background-color: rgb(101, 28, 50);
 }
 aside#right{
 	float: right;
