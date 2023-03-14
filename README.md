@@ -2,7 +2,7 @@
 
 website for any strats and nades in the game CounterStrike Global Offensive
 
-live version: https://pviprey.github.io/strana/
+live version: https://pviprey.github.io/Strana/
 
 **TODO:**<br>
 *making the website responsive:*<br>
